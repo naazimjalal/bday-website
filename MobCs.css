@@ -1,0 +1,226 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family: ultra;
+    src: url(Fonts/Ultra-Regular.ttf);
+}
+@font-face {
+    font-family: AbrilFat;
+    src: url(Fonts/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: lobsterT;
+    src: url(Fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: DancScript;
+    src: url(Fonts/DancingScript-Regular.ttf);
+}
+@font-face {
+    font-family: lobster;
+    src: url(Fonts/Lobster-Regular.ttf);
+}
+header{
+    font-family: lobster;
+    font-size: 12vw;
+    background: url(bg/text.jfif) ;/*-webkit-linear-gradient(50deg, rgb(23, 23, 211), rgb(241, 88, 88));*/
+    -webkit-background-clip: text;
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    padding: 4% 4%;
+    text-align: center;
+    
+}
+body{
+    background: url(bg/gl.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.Collage>img{
+    width: 30%;
+    height: auto;
+    /*border: 3px white solid;*/
+    border-radius: 31px;
+     
+}
+#calendar{
+    width: 38%;
+    height: auto;
+    top: 26%;
+    left: 68%;
+    position: absolute;
+}
+.Collage{
+    top: 56%;
+    left: 6%;
+    position: absolute;
+}
+#gift1{
+    width: 14%;
+    height: auto;
+    top: 45%;
+    left: 62%;
+    position: absolute;
+}
+#gift2{
+    width: 12%;
+    height: auto;
+    top: 44.9%;
+    left: 71%;
+    position: absolute;
+}
+#gift3{
+    width: 10%;
+    height: auto;
+    top: 46%;
+    left: 81%;
+    position: absolute;
+}
+#gift4{
+    width: 10%;
+    height: auto;
+    top: 46%;
+    left: 81%;
+    position: absolute;
+}
+ 
+.Seg1{
+    color: Black;
+    text-align: justify;
+    font-family: lobsterT;
+    font-size: 4vw;
+    top: 85%;
+    left: 3%;
+    position: absolute;
+    background: linear-gradient(127deg, rgb(214, 139, 236), rgb(235, 156, 225));
+    min-height: 25%;
+    width: 46%;
+    border-radius: 7%;
+}
+.Seg2{
+    color: Black;
+    text-align: justify;
+    font-family: lobsterT;
+    font-size: 4vw;
+    top: 85%;
+    left: 51%;
+    position: absolute;
+    background: linear-gradient(127deg, rgb(214, 139, 236), rgb(235, 156, 225));
+    min-height: 25%;
+    width: 46%;
+    border-radius: 7%;
+}
+.Seg3{
+    color: Black;
+    text-align: justify;
+    font-family: lobsterT;
+    font-size: 4vw;
+    top: 115%;
+    left: 3%;
+    position: absolute;
+    background: linear-gradient(127deg, rgb(214, 139, 236), rgb(235, 156, 225));
+    min-height: 25%;
+    width: 46%;
+    border-radius: 7%;
+}
+.Seg4{
+    color: Black;
+    text-align: justify;
+    font-family: lobsterT;
+    font-size: 4vw;
+    top: 115%;
+    left: 51%;
+    position: absolute;
+    background: linear-gradient(127deg, rgb(214, 139, 236), rgb(235, 156, 225));
+    min-height: 25%;
+    width: 46%;
+    border-radius: 7%;
+}
+#Timer{
+    padding:4% 0%;
+    color: white;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(90deg, #8134Af, #515bd4);
+    height: 7%;
+    min-width: 58%;
+    font-size: 8vw;
+    top: 34%;
+    left: 7%;
+    position: absolute;
+    border-radius: 7%;
+    border: 5px lavender solid;
+}
+ 
+#cal{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6vw;
+    background: url(bg/text.jfif);
+    -webkit-background-clip: text;
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    padding: 4% 4%;
+    text-align: center;
+    top: 33%;
+    left: 75%;
+    position: absolute;
+}
+.msg{
+    
+    top: 156%;
+    left: 17%;
+    position: absolute;
+    border-radius: 0%;
+    font-family: AbrilFat;
+    font-size: 4vw;
+    color: lightcyan;
+}
+#toptext{
+    font-size: 4vw;
+    bottom: 107%;
+    left: -8%;
+    font-family: ultra;
+    position: absolute;
+    -webkit-text-stroke: 0.5px black; /* stroke width and color */
+    
+}
+#UsrTxt{
+    width: 90%;
+    height: 166px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: AbrilFat;
+    left: -9%;
+    position: relative;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+        }
+#Submit{
+    background-color: #4CAF50;
+    font-family: DancScript;
+    border: none;
+    color: white;
+    padding: 2% 6%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    left: -13%;
+    position: relative;
+    font-size: 6vw;
+    margin: 7% 29%;
+    cursor: pointer;
+    min-width: 31%;
+}
+.copyright{
+    top: 635%;
+    left: 0%;
+    position: absolute;
+    background-color: rgb(3, 1, 22);
+    height: 4%;
+    width: 106%;
+    text-align: justify;
+    color: white;
+    padding: 6%;
+    font-family: 'AbrilFat';
+}

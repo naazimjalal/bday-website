@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website expired</title>
+    <link rel="shortcut icon" href="https://icons-for-free.com/iconfiles/png/512/expired-131964752748201554.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: font3;
+            src: url(Lobster-Regular.ttf);
+        }
+        @font-face {
+            font-family: font1;
+            src: url(AbrilFatface-Regular.ttf);
+        }
+        @font-face {
+            font-family: font2;
+            src: url(Ultra-Regular.ttf);
+        }
+         .container {
+            height: 100px;
+            width: 300px;
+            background: rgb(236, 251, 255);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px -6px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        
+         
+        .container>div {
+            text-align: center;
+        }
+        
+        .container>div:hover {
+            cursor: pointer;
+        }
+        
+        .left {
+            background: rgb(192, 102, 177);
+        }
+        
+        .right {
+            background: rgb(97, 165, 255);
+        }
+        
+        .text {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            user-select: none;
+        }
+        header{
+            color: white;
+            text-align: center;
+            font-family: font2;
+            font-size: 5vw;
+        }
+        .option-title {
+            color: rgba(255, 255, 255, 1);
+        }
+        #Top{
+            color: white;
+            text-align: justify;
+            width: 45%;
+            padding: 4% 29%;
+            font-family: font1;
+        }
+        .option-size {
+            color: rgba(255, 255, 255, 1);
+            font-size: 20px;
+        }
+        body{
+            background-color:  rgb(63, 81, 244); /* For browsers that do not support gradients */
+            background-image: linear-gradient(85deg, rgb(63, 81, 244) , rgb(107, 145, 253));
+        }
+        #voting-box{
+            top: 112%;
+            left: 53%;
+            position: absolute;
+        }
+        #Timer{
+            padding: 2% 0%;
+            color: white;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-image: linear-gradient(90deg, #8134Af, #515bd4);
+            height: 7%;
+            min-width: 40%;
+            font-size: 4vw;
+            top: 56%;
+            left: 31%;
+            position: absolute;
+            border-radius: 7%;
+            border: 5px lavender solid;
+        }
+        .q{
+            font-size: 141%;
+            color: white;
+            text-align: justify;
+            font-family: font3;
+            padding: 22% 30%;
+        }
+        .in{
+            color: white;
+            font-family: font3;
+            font-size: 4vw;
+            padding: 0% 28%;
+        }
+        #vid{
+            text-align: center;
+        }
+    </style>
+    <header>Website expired</header>
+    <div id="Top">
+        <p>as Nazla birthday was on 26 november there was no point for this website. We recieved so many amazing messages thank you!!!!</p> 
+    </div>
+    <div class="in">Nazla Next 18th birthday in -</div>
+    <div class="q">
+        <div id="Timer"></div>
+        <div>should there be another website for Nazla's next birthday?</div>
+    </div>
+    <div class="container" id="voting-box">
+        <div class="left" onclick="addleft()">
+          <div class="text">
+            <span class="option-size" id="size-one">27</span>
+            <br>
+            <span class="option-title" id="option-one">Yes</span>                
+          </div>
+        </div>
+        <div class="right" onclick="addright()">
+          <div class="text">
+            <span class="option-size" id="size-two">7</span>
+            <br>
+            <span class="option-title" id="option-two">No</span>
+          </div>
+        </div>
+    </div>
+    <div id="vid">
+        <video width="320" height="240" autoplay>
+            <source src="bday vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <script>
+        var countDownDate = new Date("November 26, 2021 0:00:00").getTime();
+        var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        const startit = () => {
+        setTimeout(function () {
+          console.log("start");
+          confetti.start();
+            }, 1000);
+        };
+
+        const stopit = () => {
+            setTimeout(function () {
+            console.log("stop");
+            confetti.stop();
+            }, 6000);
+            
+        };
+        document.getElementById("Timer").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("Timer").innerHTML = "Happy B'day Nazla";
+            startit();
+            stopit();
+        }
+        }, 1000);
+        window.onload =  setup();
+        var pointA = 1;
+        var pointB = 1;
+        var totalVotes = pointA + pointB;
+
+        function addleft(){
+            pointA += 1;
+            totalVotes += 1;
+            updatePoints();
+            console.log(pointA + ' '+ pointB);
+        }
+        function addright(){
+            pointB += 1;
+            totalVotes += 1;
+            updatePoints();
+            console.log(pointA + ' '+ pointB);
+        }
+
+        function updatePoints(){
+            var percentA = (pointA / totalVotes) * 100;
+            var percentB = (pointB / totalVotes) * 100;
+            var size = percentA + "% " + percentB + "%";
+
+            document.getElementById("size-one").innerHTML = Math.round(percentA) + '%';
+            document.getElementById("size-two").innerHTML = Math.round(percentB) + '%';
+            document.getElementById("voting-box").style.gridTemplateColumns=  percentA + "% " + percentB + "%";
+
+            document.getElementById("total-votes").innerHTML = "Total Votes Casted: " + totalVotes;
+            document.getElementById("total-left").innerHTML = "Option A: " + pointA;
+            document.getElementById("total-right").innerHTML = "Option B: " + pointB;
+        }
+
+        function setup() {
+            pointA = 1.7;
+            pointB = 0.9;
+            totalVotes = pointA + pointB;
+
+            document.getElementById("option-one").innerHTML = "Yes";
+            document.getElementById("option-two").innerHTML = "No";
+
+            updatePoints();
+        }
+        
+    </script>
+</body>
+</html>

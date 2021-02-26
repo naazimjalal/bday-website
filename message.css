@@ -1,0 +1,172 @@
+.msg1{
+    min-height: 32%;
+    min-width: 78%;
+    border: 3px black solid;
+    top: 215%;
+    left: 10%;
+    background-color: white;
+    position: absolute;
+}
+
+.msg2{
+    min-height: 32%;
+    min-width: 78%;
+    border: 3px black solid;
+    top: 255%;
+    left: 10%;
+    background-color: white;
+    position: absolute;
+}
+.msg3{
+    min-height: 32%;
+    min-width: 78%;
+    border: 3px black solid;
+    top: 295%;
+    left: 10%;
+    background-color: white;
+    position: absolute;
+}
+.msg4{
+    min-height: 32%;
+    min-width: 78%;
+    border: 3px black solid;
+    top: 335%;
+    left: 10%;
+    background-color: white;
+    position: absolute;
+}
+.msg5{
+    min-height: 32%;
+    min-width: 78%;
+    border: 3px black solid;
+    top: 335%;
+    left: 10%;
+    background-color: white;
+    position: absolute;
+}
+.msg6{
+    min-height: 32%;
+    min-width: 78%;
+    border: 3px black solid;
+    top: 335%;
+    left: 10%;
+    background-color: white;
+    position: absolute;
+}
+.msg7{
+    min-height: 32%;
+    min-width: 78%;
+    border: 3px black solid;
+    top: 335%;
+    left: 10%;
+    background-color: white;
+    position: absolute;
+}
+#msg1{
+    min-height: 0%;
+    min-width: 74%;
+    border: 3px tomato solid;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    background-color: tomato;
+}
+#msg2{
+    min-height: 0%;
+    min-width: 74%;
+    border: 3px tomato solid;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    background-color: tomato;
+}
+#msg3{
+    min-height: 0%;
+    min-width: 74%;
+    border: 3px tomato solid;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    background-color: tomato;
+}
+#msg4{
+    min-height: 0%;
+    min-width: 74%;
+    border: 3px tomato solid;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    background-color: tomato;
+}
+#msg5{
+    min-height: 0%;
+    min-width: 74%;
+    border: 3px tomato solid;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    background-color: tomato;
+}
+#msg7{
+    min-height: 0%;
+    min-width: 74%;
+    border: 3px tomato solid;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    background-color: tomato;
+}
+#msg6{
+    min-height: 0%;
+    min-width: 74%;
+    border: 3px tomato solid;
+    position: absolute;
+    top: 15%;
+    left: 11%;
+    background-color: tomato;
+}
+.text1{
+    font-family: AbrilFat;
+    text-align: center;
+    top: 25%;
+     
+    position: absolute;
+}
+.text2{
+    font-family: AbrilFat;
+    top: 25%;
+    text-align: center;
+    position: absolute;
+}
+.text3{
+    font-family: AbrilFat;
+    top: 25%;
+    text-align: center;
+    position: absolute;
+}
+.text4{
+    font-family: AbrilFat;
+    top: 25%;
+    text-align: center;
+    position: absolute;
+}
+.text5{
+    font-family: AbrilFat;
+    top: 25%;
+    text-align: center;
+    position: absolute;
+}
+.text6{
+    font-family: AbrilFat;
+    top: 25%;
+    text-align: center;
+    position: absolute;
+}
+
+.text7{
+    font-family: AbrilFat;
+    top: 25%;
+    text-align: center;
+    position: absolute;
+}
+
